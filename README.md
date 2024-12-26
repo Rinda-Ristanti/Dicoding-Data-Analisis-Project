@@ -11,8 +11,8 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
 
 ## Struktur Direktori
 
-- **/Dashboard**: Direktori ini berisi main_data.csv yaitu data hasil analisis yang digunakan untuk membuat dashboard dan dashboard.py yang telah dibuat.
-- **/Data**: Direktori berisi data mentah (data.csv) sebelum analisis dan data setelah proses analisis (main_data.csv).
+- **/Dashboard**: Direktori ini berisi all_data.csv yaitu data hasil analisis yang digunakan untuk membuat dashboard dan dashboard.py yang telah dibuat.
+- **/Data**: Direktori berisi data mentah sebelum analisis dan data setelah proses analisis (all_data.csv).
 - **Markdown/text cell**: File ini menjelaskan setiap tahapan analisis data dan cara menjalankan dashboard.
 - **Requirements.txt**: File ini berisi berbagai library yang digunakan dalam proses analisis data.
 - **/url.txt**: File ini merupakan tautan untuk dashboard.
