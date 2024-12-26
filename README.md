@@ -1,9 +1,5 @@
 # Dicoding-Data Analysis Project with Python
 
-## Project Data Analytics
-
-Repository ini berisi proyek data analytics yang saya kerjakan. Deployment in **Streamlit** <img src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png" alt="Streamlit logo"></img>
-
 ## Deskripsi
 
 Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan Python. Proyek ini bertujuan untuk mendapatkan wawasan dari data untuk mendukung perkembangan perusahaan dan mendukung pengambilan keputusan perusahaan berdasarkan data. Proses analisi terdiri dari
