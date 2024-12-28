@@ -44,8 +44,8 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
    Atau bisa dengan kunjungi website ini [Project Data Analytics](https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/)
    
    ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/9249cdb003c3fdfa42dd8f6ff5f1b5c255c060ae/Dashboard/dashboard-page%201.PNG)
-   (https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%202.PNG)
-   (https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%203.PNG)
+   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%202.PNG)
+   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%203.PNG)
 
 ## Akses Melalui Public URL
 
