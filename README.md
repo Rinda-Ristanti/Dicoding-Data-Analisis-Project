@@ -43,5 +43,10 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
 
    Atau bisa dengan kunjungi website ini [Project Data Analytics](https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/)
 
-   <img src="./dashboard/ss.png" alt="Streamlit logo"></img>
+## AKSES MELALUI PUBLIC URL
+
+Project data analisis ini juga dapat diakses dengan mudah melalui public url berikut ini:
+1. URL Google Collaboratory Analisis data: https://colab.research.google.com/drive/1DdFIcfmP5nh3ZcjeDBKWsoZWzt0VBRp4?usp=sharing
+2. URL Google Collaboratory Dashboard: https://colab.research.google.com/drive/1RqKS4Y_jMD6G8ubfvY5YojAF7l4jcbQO?usp=sharing
+3. URL Dashboard Deployment: https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/
 
