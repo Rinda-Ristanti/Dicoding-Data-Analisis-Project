@@ -42,7 +42,8 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
    ```
 
    Atau bisa dengan kunjungi website ini [Project Data Analytics](https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/)
-   ![Screenshot aplikasi](screenshots/screenshot1.png)
+   
+   ![Screenshot aplikasi](Dashboard/dashboard-page 1.PNG)
 
 ## Akses Melalui Public URL
 
