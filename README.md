@@ -42,8 +42,9 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
    ```
 
    Atau bisa dengan kunjungi website ini [Project Data Analytics](https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/)
+   ![Screenshot aplikasi](screenshots/screenshot1.png)
 
-## AKSES MELALUI PUBLIC URL
+## Akses Melalui Public URL
 
 Project data analisis ini juga dapat diakses dengan mudah melalui public url berikut ini:
 1. URL Google Collaboratory Analisis data: https://colab.research.google.com/drive/1DdFIcfmP5nh3ZcjeDBKWsoZWzt0VBRp4?usp=sharing
