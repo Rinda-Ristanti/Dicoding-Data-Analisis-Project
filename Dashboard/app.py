@@ -58,7 +58,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Import the gzipped data into a pandas DataFrame
-all_df = pd.read_csv('Dashboard/all_data.gz', compression='gzip'
+all_df = pd.read_csv('Dashboard/all_data.gz', compression='gzip')
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
