@@ -159,58 +159,59 @@ ax[1].tick_params(axis='x', labelsize=10)
 
 st.pyplot(fig)
 
-# customer demographic
+
+# Customer Demographics
 st.subheader("Customer Demographics")
 
 fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(20, 20))
 
+# Plot 1: Number of Customer by City
 with ax[0]:
-    # Define color palettes
-    blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
-    highlight_color = "lightcoral" 
+    # Define color palettes (adjust color palette size if needed)
+    blue_palette = sns.color_palette("Blues_r", n_colors=len(bycity_df))
+    highlight_color = "lightcoral"
 
-    # Best Performing Product
-    colors = blue_palette.copy()
-    colors[0] = highlight_color  # Highlight the first bar (upper bar)
+    # Highlight the first bar (upper bar)
+    colors_best = blue_palette.copy()
+    colors_best[0] = highlight_color
 
     sns.barplot(
         x="customer_count",
         y="customer_city",
         data=bycity_df.sort_values(by="customer_count", ascending=False).head(5),
-        palette=colors,
-        ax=ax
+        palette=colors_best,
+        ax=ax[0]
     )
-    ax.set_title("Number of Customer by city", loc="center", fontsize=50)
-    ax.set_ylabel(None)
-    ax.set_xlabel(None)
-    ax.tick_params(axis='x', labelsize=35)
-    ax.tick_params(axis='y', labelsize=30)
-    st.pyplot(fig)
+    ax[0].set_title("Number of Customer by City", loc="center", fontsize=50)
+    ax[0].set_ylabel(None)
+    ax[0].set_xlabel(None)
+    ax[0].tick_params(axis='x', labelsize=35)
+    ax[0].tick_params(axis='y', labelsize=30)
 
+# Plot 2: Number of Customer by State
 with ax[1]:
-    
-    # Define color palettes
-    blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
-    highlight_color = "lightcoral" 
+    # Define color palettes (adjust color palette size if needed)
+    blue_palette = sns.color_palette("Blues_r", n_colors=len(bystate_df))
+    highlight_color = "lightcoral"
 
-    # Best Performing Product
-    colors = blue_palette.copy()
-    colors[0] = highlight_color  # Highlight the first bar (upper bar)
+    # Highlight the first bar (upper bar)
+    colors_best = blue_palette.copy()
+    colors_best[0] = highlight_color
 
     sns.barplot(
         x="customer_count",
         y="customer_state",
         data=bystate_df.sort_values(by="customer_count", ascending=False).head(5),
-        palette=colors,
-        ax=ax
+        palette=colors_best,
+        ax=ax[1]
     )
-    ax.set_title("Number of Customer by States", loc="center", fontsize=30)
-    ax.set_ylabel(None)
-    ax.set_xlabel(None)
-    ax.tick_params(axis='x', labelsize=35)
-    ax.tick_params(axis='y', labelsize=30)
-    st.pyplot(fig)
+    ax[1].set_title("Number of Customer by States", loc="center", fontsize=30)
+    ax[1].set_ylabel(None)
+    ax[1].set_xlabel(None)
+    ax[1].tick_params(axis='x', labelsize=35)
+    ax[1].tick_params(axis='y', labelsize=30)
 
+st.pyplot(fig)
 
 # Best Customer Based on RFM Parameters
 st.title("Best Customer Based on RFM Parameters")
