@@ -95,7 +95,7 @@ bystate_df = create_bystate_df(main_df)
 rfm_df = create_rfm_df(main_df)
 
 
-# plot number of daily orders (2021)
+# plot number of daily orders 
 st.header('E-Commerce Dashboard :sparkles:')
 st.subheader('Daily Orders')
 
@@ -131,7 +131,7 @@ st.subheader("Best & Worst Performing Product")
 
 fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(35, 15))
 
-colors = ["product_category_name_english"]
+colors = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
