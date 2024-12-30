@@ -166,7 +166,8 @@ st.subheader("Customer Demographics")
 col1, col2 = st.columns(2)
 
 with col1:
-    fig, ax = plt.subplots(figsize=(20, 10))
+    # Assuming the non-breaking space was before this line
+    fig, ax = plt.subplots(figsize=(20, 10))
     
     blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
     highlight_color = "lightcoral" 
