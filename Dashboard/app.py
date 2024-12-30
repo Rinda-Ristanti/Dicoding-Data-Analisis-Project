@@ -57,17 +57,8 @@ def create_rfm_df(df):
 
     return rfm_df
 
-# Load cleaned data
-url = "https://drive.google.com/file/d/1TP8tQV1RGOEvkkqfeyPj5j9F80VYLBAe/view?usp=sharing"
-
-# Extract the file ID from the shareable link
-file_id = url.split('/')[-2]
-
-# Construct the download URL
-download_url = f"https://drive.google.com/uc?export=download&id={file_id}"
-
-# Read the CSV file into a pandas DataFrame (without compression)
-all_df = pd.read_csv(download_url)
+# Import the gzipped data into a pandas DataFrame
+all_df = pd.read_csv('Dashboard/all_data.gz', compression='gzip'
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
