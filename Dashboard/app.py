@@ -106,7 +106,7 @@ with col1:
     st.metric("Total orders", value=total_orders)
 
 with col2:
-    total_revenue = format_currency(daily_orders_df.revenue.sum(), "USD", locale='es_CO')
+    total_revenue = format_currency(daily_orders_df.revenue.sum(), "R$", locale='es_CO')
     st.metric("Total Revenue", value=total_revenue)
 
 fig, ax = plt.subplots(figsize=(16, 8))
@@ -223,7 +223,7 @@ with tab2:
     st.pyplot(fig)
 
 with tab3:
-    avg_frequency = format_currency(rfm_df.monetary.mean(), "USD", locale='es_CO')
+    avg_frequency = format_currency(rfm_df.monetary.mean(), "R$", locale='es_CO')
     st.metric("Average Monetary", value=avg_frequency)
     # Add Monetary bar plot here
     fig, ax = plt.subplots(figsize=(12, 6))  # Adjust figsize as needed
