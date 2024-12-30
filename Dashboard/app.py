@@ -115,7 +115,7 @@ ax.plot(
     daily_orders_df["order_count"],
     marker='o',
     linewidth=2,
-    color="plt.cm.Blues"
+    color=colormap(daily_orders_df["order_count"] / daily_orders_df["order_count"].max())
 )
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
