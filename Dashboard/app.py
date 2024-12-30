@@ -129,7 +129,7 @@ st.pyplot(fig)
 # Product performance
 st.subheader("Best & Worst Performing Product")
 
-fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(25, 6))
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(20, 6))
 
 # Define color palettes
 blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
@@ -162,17 +162,16 @@ st.pyplot(fig)
 # customer demographic
 st.subheader("Customer Demographics")
 
-col1, col2 = st.columns(2)
+fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(20, 20))
 
-with col1:
-    fig, ax = plt.subplots(figsize=(20, 10))
+with ax[0]:
     # Define color palettes
     blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
     highlight_color = "lightcoral" 
 
     # Best Performing Product
-    colors_best = blue_palette.copy()
-    colors_best[0] = highlight_color  # Highlight the first bar (upper bar)
+    colors = blue_palette.copy()
+    colors[0] = highlight_color  # Highlight the first bar (upper bar)
 
     sns.barplot(
         x="customer_count",
@@ -188,15 +187,15 @@ with col1:
     ax.tick_params(axis='y', labelsize=30)
     st.pyplot(fig)
 
-with col2:
-    fig, ax = plt.subplots(figsize=(20, 10))
+with ax[1]:
+    
     # Define color palettes
     blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
     highlight_color = "lightcoral" 
 
     # Best Performing Product
-    colors_best = blue_palette.copy()
-    colors_best[0] = highlight_color  # Highlight the first bar (upper bar)
+    colors = blue_palette.copy()
+    colors[0] = highlight_color  # Highlight the first bar (upper bar)
 
     sns.barplot(
         x="customer_count",
