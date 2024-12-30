@@ -129,26 +129,26 @@ st.pyplot(fig)
 # Product performance
 st.subheader("Best & Worst Performing Product")
 
-fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(15, 6))
 
-colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+colors = sns.color_palette("husl", n_colors=len(sum_order_items_df))
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
-ax[0].set_xlabel("Number of Sales", fontsize=30)
-ax[0].set_title("Best Performing Product", loc="center", fontsize=50)
-ax[0].tick_params(axis='y', labelsize=35)
-ax[0].tick_params(axis='x', labelsize=30)
+ax[0].set_xlabel("Number of Sales", fontsize=12)
+ax[0].set_title("Best Performing Product", loc="center", fontsize=14)
+ax[0].tick_params(axis='y', labelsize=10)
+ax[0].tick_params(axis='x', labelsize=10)
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.sort_values(by="order_item_id", ascending=True).head(5), palette=colors, ax=ax[1])
 ax[1].set_ylabel(None)
-ax[1].set_xlabel("Number of Sales", fontsize=30)
+ax[1].set_xlabel("Number of Sales", fontsize=12)
 ax[1].invert_xaxis()
 ax[1].yaxis.set_label_position("right")
 ax[1].yaxis.tick_right()
-ax[1].set_title("Worst Performing Product", loc="center", fontsize=50)
-ax[1].tick_params(axis='y', labelsize=35)
-ax[1].tick_params(axis='x', labelsize=30)
+ax[1].set_title("Worst Performing Product", loc="center", fontsize=14)
+ax[1].tick_params(axis='y', labelsize=10)
+ax[1].tick_params(axis='x', labelsize=10)
 
 st.pyplot(fig)
 
