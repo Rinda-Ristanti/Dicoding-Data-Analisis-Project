@@ -73,7 +73,7 @@ max_date = all_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("https://raw.githubusercontent.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/main/Dashboard/eCommerce-2.jpg")
+    st.image("Dashboard/eCommerce-2.jpg")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
@@ -160,7 +160,7 @@ with col1:
     sns.barplot(
         x="customer_count",
         y="customer_city",
-        data=bycity_df.sort_values(by="customer_count", ascending=False).head(10),
+        data=bycity_df.sort_values(by="customer_count", ascending=False).head(5),
         palette=colors,
         ax=ax
     )
@@ -177,7 +177,7 @@ with col2:
     sns.barplot(
         x="customer_count",
         y="customer_state",
-        data=bystate_df.sort_values(by="customer_count", ascending=False).head(10),
+        data=bystate_df.sort_values(by="customer_count", ascending=False).head(5),
         palette=colors,
         ax=ax
     )
