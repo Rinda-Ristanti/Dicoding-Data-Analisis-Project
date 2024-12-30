@@ -41,16 +41,16 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
    streamlit run app.py
    ```
 
-   Atau bisa dengan kunjungi website ini [Project Data Analytics](https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/)
+   Atau bisa dengan kunjungi website ini [Project Data Analytics](https://8yzz75y3vdyzwtpqqcx85i.streamlit.app/)
    
-   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/9249cdb003c3fdfa42dd8f6ff5f1b5c255c060ae/Dashboard/dashboard-page%201.PNG)
-   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%202.PNG)
-   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/225b8ad0e838cb05bd3fd4cdeb6659fddb16a447/Dashboard/dashboard-page%203.PNG)
+   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/4e4b87d84adc86f0d1a5176c05615b53b4d6fdc2/Dashboard/dashboard-page%201.PNG)
+   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/4e4b87d84adc86f0d1a5176c05615b53b4d6fdc2/Dashboard/dashboard-page%202.PNG)
+   ![Screenshot aplikasi](https://github.com/Rinda-Ristanti/Dicoding-Data-Analisis-Project/blob/4e4b87d84adc86f0d1a5176c05615b53b4d6fdc2/Dashboard/dashboard-page%203.PNG)
 
 ## Akses Melalui Public URL
 
 Project data analisis ini juga dapat diakses dengan mudah melalui public url berikut ini:
 1. URL Google Collaboratory Analisis data: https://colab.research.google.com/drive/1DdFIcfmP5nh3ZcjeDBKWsoZWzt0VBRp4?usp=sharing
 2. URL Google Collaboratory Dashboard: https://colab.research.google.com/drive/1RqKS4Y_jMD6G8ubfvY5YojAF7l4jcbQO?usp=sharing
-3. URL Dashboard Deployment: https://qrn8qn5ttxwbvy7kf8wwzm.streamlit.app/
+3. URL Dashboard Deployment: https://8yzz75y3vdyzwtpqqcx85i.streamlit.app/
 
