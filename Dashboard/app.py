@@ -167,11 +167,17 @@ col1, col2 = st.columns(2)
 
 with col1:
     fig, ax = plt.subplots(figsize=(20, 10))
-    colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+    # Define color palettes
+    blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
+    highlight_color = "lightcoral" 
+
+    # Best Performing Product
+    colors = blue_palette.copy()
+    colors[0] = highlight_color  # Highlight the first bar (upper bar)
     sns.barplot(
         x="customer_count",
         y="customer_city",
-        data=bycity_df.sort_values(by="customer_count", ascending=False).head(10),
+        data=bycity_df.sort_values(by="customer_count", ascending=False).head(5),
         palette=colors,
         ax=ax
     )
@@ -184,11 +190,17 @@ with col1:
 
 with col2:
     fig, ax = plt.subplots(figsize=(20, 10))
-    colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+    # Define color palettes
+    blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
+    highlight_color = "lightcoral" 
+
+    # Best Performing Product
+    colors = blue_palette.copy()
+    colors[0] = highlight_color  # Highlight the first bar (upper bar)
     sns.barplot(
         x="customer_count",
         y="customer_state",
-        data=bystate_df.sort_values(by="customer_count", ascending=False).head(10),
+        data=bystate_df.sort_values(by="customer_count", ascending=False).head(5),
         palette=colors,
         ax=ax
     )
