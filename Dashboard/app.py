@@ -131,7 +131,14 @@ st.subheader("Best & Worst Performing Product")
 
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(15, 6))
 
-colors = sns.color_palette("husl", n_colors=len(sum_order_items_df))
+# Define color palettes
+blue_palette = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
+highlight_color = "lightcoral" 
+
+# Best Performing Product
+colors = blue_palette.copy()
+colors[0] = highlight_color  # Highlight the first bar (upper bar)
+
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
