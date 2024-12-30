@@ -120,15 +120,18 @@ ax.plot(
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
 
+ax.set_ylabel("Order Count", fontsize=20)  
+ax.set_xlabel("Date", fontsize=15) 
+
 st.pyplot(fig)
 
 
 # Product performance
 st.subheader("Best & Worst Performing Product")
 
-fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
+fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(35, 15))
 
-colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+colors = ["product_category_name_english"]
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
