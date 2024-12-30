@@ -129,9 +129,9 @@ st.pyplot(fig)
 # Product performance
 st.subheader("Best & Worst Performing Product")
 
-fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(35, 15))
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
 
-colors = sns.color_palette("Blues_r", n_colors=len(sum_order_items_df))
+colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
 sns.barplot(x="order_item_id", y="product_category_name_english", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
@@ -204,8 +204,8 @@ with tab1:
     recency_df = rfm_df[rfm_df['recency'] > 0].sort_values(by="recency", ascending=True).head(5)
     fig, ax = plt.subplots(figsize=(12, 6))  # Adjust figsize as needed
     sns.barplot(x="recency", y="customer_id", data=recency_df.head(5), palette=colors, ax=ax)
-    ax.set_ylabel(None)
-    ax.set_xlabel("customer_id", fontsize=12)  # Adjust fontsize as needed
+    ax.set_xlabel(None)
+    ax.set_ylabel("customer_id", fontsize=12)  # Adjust fontsize as needed
     ax.set_title("By Recency (days)", loc="center", fontsize=16)  # Adjust fontsize as needed
     ax.tick_params(axis='x', labelsize=10)  # Adjust labelsize as needed
     ax.tick_params(axis='y', labelsize=12)  # Adjust labelsize as needed
@@ -218,8 +218,8 @@ with tab2:
     # Add Frequency bar plot here
     fig, ax = plt.subplots(figsize=(12, 6))  # Adjust figsize as needed
     sns.barplot(x="frequency", y="customer_id", data=rfm_df.sort_values(by="frequency", ascending=False).head(5), palette=colors, ax=ax)
-    ax.set_ylabel(None)
-    ax.set_xlabel("customer_id", fontsize=12)  # Adjust fontsize as needed
+    ax.set_xlabel(None)
+    ax.set_ylabel("customer_id", fontsize=12)  # Adjust fontsize as needed
     ax.set_title("By Frequency", loc="center", fontsize=16)  # Adjust fontsize as needed
     ax.tick_params(axis='x', labelsize=10)  # Adjust labelsize as needed
     ax.tick_params(axis='y', labelsize=12)  # Adjust labelsize as needed
@@ -231,8 +231,8 @@ with tab3:
     # Add Monetary bar plot here
     fig, ax = plt.subplots(figsize=(12, 6))  # Adjust figsize as needed
     sns.barplot(x="monetary", y="customer_id", data=rfm_df.sort_values(by="monetary", ascending=False).head(5), palette=colors, ax=ax)
-    ax.set_ylabel(None)
-    ax.set_xlabel("customer_id", fontsize=12)  # Adjust fontsize as needed
+    ax.set_xlabel(None)
+    ax.set_ylabel("customer_id", fontsize=12)  # Adjust fontsize as needed
     ax.set_title("By Monetary", loc="center", fontsize=16)  # Adjust fontsize as needed
     ax.tick_params(axis='x', labelsize=10)  # Adjust labelsize as needed
     ax.tick_params(axis='y', labelsize=12)  # Adjust labelsize as needed
