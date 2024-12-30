@@ -29,7 +29,7 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
 
    ```shell
    pip install streamlit
-   pip install -r dashboard/requirements.txt
+   pip install -r Dashboard/requirements.txt
    ```
 
 ## Penggunaan
@@ -37,7 +37,7 @@ Proyek ini merupakan proyek analisis data E-Commerce Public Dataset menggunakan 
 1. Masuk ke direktori proyek (Local):
 
    ```shell
-   cd dicoding/dashboard/
+   cd Dicoding-Data-Analisis-Project/Dashboard/
    streamlit run app.py
    ```
 
